@@ -6,15 +6,15 @@
   <% items.each do |work| %>
     <div class="showcase__item">
       <figure class="card">
-        <a href="/works/<%= work.slug %>" class="card__image">
+        <a href="/loipen/<%= work.slug %>" class="card__image">
           <img src="<%= work.cover_image.url(w: 450, fm: 'jpg', auto: 'compress') %>">
         </a>
         <figcaption class="card__caption">
           <h6 class="card__title">
-            <a href="/works/<%= work.slug %>"><%= work.title %></a>
+            <a href="/loipen/<%= work.slug %>"><%= work.title %></a>
           </h6>
           <div class="card__description">
-            <p><%= work.length %></p>
+            <p>Länge: <%= work.length %></p>
             <p><%= work.excerpt %></p>
           </div>
         </figcaption>
